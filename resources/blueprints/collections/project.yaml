@@ -1,0 +1,132 @@
+title: Project
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: intro_movie
+        field:
+          display: 'Intro movie'
+          type: video
+          icon: video
+          instructions: 'Upload the intro movie for this project here'
+          listable: hidden
+      -
+        handle: caption_for_intro_movie
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Caption for intro movie'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: replicator
+        field:
+          sets:
+            main_content:
+              display: 'Main content'
+              fields:
+                -
+                  handle: text
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    display: Text
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                -
+                  handle: image
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                -
+                  handle: pull_quote
+                  field:
+                    input_type: text
+                    display: 'Pull quote'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: movie
+                  field:
+                    display: Movie
+                    type: video
+                    icon: video
+                    listable: hidden
+          display: Replicator
+          type: replicator
+          icon: replicator
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - sections
+          max_items: 1
+          listable: false
+          localizable: true

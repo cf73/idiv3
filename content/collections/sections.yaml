@@ -1,0 +1,29 @@
+title: Sections
+template: default
+layout: layout
+revisions: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: false
+  tree:
+    -
+      entry: 83a7579e-480d-4a34-aebd-9236a8fbed04
+      children:
+        -
+          entry: c261df01-95a2-46b8-9a69-afde20fc445a
+          children:
+            -
+              entry: 83b477eb-8804-49a7-adca-b263efde45ef
+            -
+              entry: 0ce23865-6cf4-40c4-96ca-c86b1f4345b6
+        -
+          entry: 8761eb36-2854-498c-a4f3-b6785a0c4ec8
+    -
+      entry: 4b155026-7511-4f5c-9fb7-b033d2730eaf
+    -
+      entry: c4a5d941-9abc-4bec-8db0-d47ab3d278d0
+    -
+      entry: 3fa0ebdc-ff2d-4028-a173-157ea3c6c796
